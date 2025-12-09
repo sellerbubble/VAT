@@ -43,3 +43,9 @@ Notes:
   (we took a random crop with 90% area in every training sample, so at test time we simply take the center 90% crop).
 If the discrepancy is large,
   please post a GitHub issue, and we will look into it.
+
+### download pretrained checkpoint from huggingface
+https://huggingface.co/bubbleseller/VAT
+```bash
+sh evaluation/eval_libero.sh --task_suite_name libero_spatial --pretrained_checkpoint ./ckpt/siglip/VAT_libero_spatial_siglip_step33120_ckpt
+```
